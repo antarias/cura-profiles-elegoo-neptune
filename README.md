@@ -1,35 +1,30 @@
-# Elegoo Neptune, Neptune 2 and Saturn profiles for Cura
+# Elegoo Neptune 2D profile for Cura
 
-The configurations are taken from the Elegoo-branded Cura version 4.8 that comes with the printers.
-I extracted and clean the configurations files to be able to use the regular Cura distribution, and its updates.
+Profile to use Neptune 2D in Cura, updated from the Elegoo-branded Cura version 4.8 that came with the printer.
 
-=======================================
+## To use:
 
-To use them, just open your Cura installation folder, and go to the resources folder,
-for example, C:\Program Files\Ultimaker Cura 4.12.1\resources
+Copy files into `C:\Users\USER\AppData\Roaming\cura\VERSION\`, subfolders `definitions` and `extruders` :
 
-Copy following files in place and restart Cura. Go to add printer, and search for Elegoo models.
+- definitions\elegoo_neptune_2D.def.json
+- extruders\elegoo_neptune2D_extruder_0.def.json
+- extruders\elegoo_neptune2D_extruder_1.def.json 
 
-Files to copy :
+Then select `Elegoo Neptune 2D` with author `antarias/custom`
 
-Folder  .\resources\definitions\
-  elegoo_neptune.def.json
-  elegoo_neptune_2.def.json
-  elegoo_saturn.def.json
+## Changes:
 
-Folder .\resources\extruders\
-  elegoo_neptune_extruder_0.def.json
-  elegoo_neptune_extruder_1.def.json
-  elegoo_neptune2_extruder_0.def.json
-  elegoo_neptune2_extruder_1.def.json
-  elegoo_saturn_extruder_0.def.json
-  elegoo_saturn_extruder_1.def.json
-  
-=======================================
-List of changes:
-v1  Jan 2022
+#### May 2026
+  - Removed Elegoo Neptune 2 and Saturn, only keeping Elegoo Neptune 2D (same as 2 but with 2 extrusors)
+  - Fixed error with extruders numbers, now can correctly use 1 and 2 extruders.
+  - Simultaneous heating of bed and extrruders (not in sequence, but at same time, to start printing faster)
+
+#### Jan 2022
   - Renamed Elegoo-modified custom extruders as Elegoo extruders, correcting Elegoo spelling.
   - Corrected references to Elegoo extruders from Elegoo printers
   - Moved Elegoo-modified code from fdmprinter and fdmextruder to the Elegoo files
 
-  
+#### Initial version 
+- Configurations are taken from the Elegoo-branded Cura version 4.8 that comes with the printers. 
+Extracted and cleaned the configurations files to be able to use the regular Cura distribution, and its updates.
+
