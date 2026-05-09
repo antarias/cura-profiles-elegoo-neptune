@@ -15,9 +15,14 @@ Then select `Elegoo Neptune 2D` with author `antarias/custom`
 ## Changes:
 
 #### May 2026
+  - Print purge line with the initial extruder. So, if only using 1 extruders, it is not necesary a purge tower, and the correct extruder will be purged (using the right color)
+  - Other minor errors suggested by Claude.
+
+#### May 2026
   - Removed Elegoo Neptune 2 and Saturn, only keeping Elegoo Neptune 2D (same as 2 but with 2 extrusors)
   - Fixed error with extruders numbers, now can correctly use 1 and 2 extruders.
-  - Simultaneous heating of bed and extrruders (not in sequence, but at same time, to start printing faster)
+  - Simultaneous heating of bed and extruder (not in sequence, but at same time, to start printing faster)
+  - Created with Gemini.
 
 #### Jan 2022
   - Renamed Elegoo-modified custom extruders as Elegoo extruders, correcting Elegoo spelling.
